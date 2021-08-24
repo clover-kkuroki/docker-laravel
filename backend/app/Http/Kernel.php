@@ -64,5 +64,7 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
 		//SimpleAuthを追加
 		'simple_auth' => \App\Http\Middleware\SimpleAuth::class,
+        //管理用ミドルウェアを追加
+        'auth.admin' => \App\Http\Middleware\AdminAuth::class,
     ];
 }
